@@ -60,13 +60,22 @@ article {
 }
 
 .text--content h2 {
+  font-weight: var(--fw-bold);
   color: var(--Very-Dark-Grayish-Blue-1);
   line-height: 1.5;
   margin-bottom: 1.2rem;
 }
 
-.text--content p {
+.text--content .details {
   color: var(--Desaturated-Dark-Blue);
+  margin-bottom: 2.4rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .profile img {
@@ -75,14 +84,40 @@ article {
   border-radius: 50%;
 }
 
+.profile .flex-group-rw {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+}
+
+.profile .flex-group-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile .flex-group-col .profile--name {
+  font-weight: var(--fw-bold);
+  color: var(--Very-Dark-Grayish-Blue-1);
+}
+
+.profile .flex-group-col p {
+  color: var(--Desaturated-Dark-Blue);
+}
+
 .social--share {
   width: 3.2rem;
   height: 3.2rem;
+  background-color: var(--Light-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: var(--Very-Dark-Grayish-Blue-1);
 }
 
 .attribution {
