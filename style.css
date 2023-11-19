@@ -2,7 +2,8 @@
 
 :root {
   /* colors */
-  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Very-Dark-Grayish-Blue-1: hsl(217, 19%, 15%);
+  --Very-Dark-Grayish-Blue-2: hsl(217, 19%, 35%);
   --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
   --Grayish-Blue: hsl(212, 23%, 69%);
   --Light-Grayish-Blue: hsl(210, 46%, 95%);
@@ -26,6 +27,7 @@ html {
 body {
   font-family: var(--ff-base);
   font-size: 1.3rem;
+  background-color: var(--Light-Grayish-Blue);
 }
 
 main {
@@ -53,13 +55,34 @@ article {
 }
 
 .text--content {
-  padding: 3.2rem;
+  padding: 3.2rem 4rem;
   background-color: white;
 }
 
 .text--content h2 {
+  color: var(--Very-Dark-Grayish-Blue-1);
   line-height: 1.5;
   margin-bottom: 1.2rem;
+}
+
+.text--content p {
+  color: var(--Desaturated-Dark-Blue);
+}
+
+.profile img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.social--share {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .attribution {
