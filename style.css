@@ -1,3 +1,18 @@
+/* root variable */
+
+:root {
+  /* colors */
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+  --ff-base: "manrope", sans-serif;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+/* global reset */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +24,7 @@ html {
 }
 
 body {
+  font-family: var(--ff-base);
   font-size: 1.3rem;
 }
 
@@ -16,22 +32,32 @@ main {
   min-height: 95vh;
   display: grid;
   place-content: center;
+  margin: 0 3.2rem;
 }
 
 article {
   max-width: 70rem;
   display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-img {
+.img-box {
   width: 100%;
+}
+
+.img-box img {
+  width: 120%;
+  height: 100%;
 }
 
 .text--content {
   padding: 3.2rem;
+  background-color: white;
 }
 
-.text--content h3 {
+.text--content h2 {
   line-height: 1.5;
   margin-bottom: 1.2rem;
 }
