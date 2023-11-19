@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.3rem;
+}
+
 main {
   min-height: 95vh;
   display: grid;
@@ -15,5 +19,27 @@ main {
 }
 
 article {
+  max-width: 70rem;
   display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+.text--content {
+  padding: 3.2rem;
+}
+
+.text--content h3 {
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
